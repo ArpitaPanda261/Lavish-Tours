@@ -1,21 +1,14 @@
-/*function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 0, lng: 0 },
-      zoom: 2,
-    });
-  
-    // Add markers for destinations
-    const destinations = [
-      { lat: 40.7128, lng: -74.006, name: 'Destination 1' },
-      // Add more destinations with latitudes and longitudes
-    ];
-  
-    destinations.forEach((destination) => {
-      new google.maps.Marker({
-        position: destination,
-        map,
-        title: destination.name,
-      });
-    });
-  }*/
-  
+document.getElementById("contactForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // You can perform form validation here
+
+  // For demonstration purposes, just show success message
+  document.getElementById("successMessage").style.display = "block";
+  document.getElementById("errorMessage").style.display = "none";
+
+  // You can also send the form data to a server using AJAX
+});
