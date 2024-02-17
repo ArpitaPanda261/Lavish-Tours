@@ -4,11 +4,22 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
 
-  // You can perform form validation here
-
-  // For demonstration purposes, just show success message
+  
   document.getElementById("successMessage").style.display = "block";
   document.getElementById("errorMessage").style.display = "none";
 
-  // You can also send the form data to a server using AJAX
+
 });
+
+
+/*var map = L.map("map").setView([20.2961, 85.82], 13);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+L.marker([20.2961, 85.82])
+  .addTo(map)
+  .bindPopup("Bhubaneswar")
+  .openPopup();*/
